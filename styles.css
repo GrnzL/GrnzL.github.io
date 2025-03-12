@@ -148,14 +148,15 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 25vh;  /* Vous pouvez ajuster la hauteur ici */
-    z-index: 2;    /* S'assurer que les particules sont derrière le contenu */
-    pointer-events: none;  /* Pour éviter d'interférer avec les clics de l'utilisateur */
+    height: 25vh;
+    z-index: 2;
+    pointer-events: none;
 }
 
 header {
-    background-color: rgba(75, 44, 111, 0.9);  /* Ajoutez de la transparence pour voir les particules en arrière-plan */
+    background-color: rgba(75, 44, 111, 0.9);
     padding: 20px;
-    position: relative;  /* Cela permet de positionner les éléments par-dessus */
-    z-index: 1;  /* Assurez-vous que l'en-tête est au-dessus des particules */
+    position: relative;
+    height: 25vh;
+    z-index: 1;
 }
