@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="particles-js"></div>
+    <div class="wave"></div>
     <header>
         <h1>Mon Portfolio</h1>
         <nav>
@@ -27,7 +29,6 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </section>
-    
     
     <section id="projects">
         <h2>Mes Projets</h2>
@@ -58,5 +59,18 @@
     <button id="scrollToTop">⬆ Retour en haut</button>
     
     <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script>
+    particlesJS('particles-js', {
+        particles: {
+        number: { value: 50 },
+        size: { value: 3 },
+        move: { speed: 2 },
+        shape: { type: 'circle' },
+        opacity: { value: 0.5 },
+        },
+    });
+    </script>
 </body>
 </html>
