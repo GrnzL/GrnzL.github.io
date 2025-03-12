@@ -148,15 +148,16 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 20vh;
-    z-index: 2;
+    height: 100%;  /* Utilisez 100% pour remplir toute la zone du header */
+    z-index: 0;    /* Placer les particules derrière le header */
     pointer-events: none;
 }
 
 header {
-    background-color: rgba(75, 44, 111, 0.9);
+    background-color: rgba(75, 44, 111, 0.9); /* En-tête avec transparence */
     padding: 20px;
-    position: relative;
-    height: 20vh;
-    z-index: 1;
+    position: relative; /* Cela permet de positionner le contenu par-dessus */
+    z-index: 1;   /* L'en-tête au-dessus des particules */
+    height: 20vh;  /* Fixer la hauteur de l'en-tête */
 }
+
