@@ -59,3 +59,68 @@ a {
 a:hover {
     color: #ffffff;
 }
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    background-color: #4b2c6f;
+    border-radius: 15px;
+    margin: 40px auto;
+    width: 80%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-image {
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.about-image::before,
+.about-image::after {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.about-image::before {
+    width: 80px;
+    height: 80px;
+    top: -20px;
+    left: -30px;
+}
+
+.about-image::after {
+    width: 50px;
+    height: 50px;
+    bottom: -20px;
+    right: -20px;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
