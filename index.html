@@ -1,75 +1,192 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Louis GERNEZ</title>
+    <meta name="description" content="CV de Louis Gernez - Étudiant en Informatique" />
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
+    <link rel="shortcut icon" href="img/ava.jpg" />
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <div id="particles-js"></div>
-    <header>
-        <h1>Mon Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <div class="about-image">
-            <img src="https://placehold.co/250x250" alt="Ma photo">
-        </div>
-        <div class="about-text">
-            <h2>À propos de moi</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-    </section>
-    
-    <section id="projects">
-        <h2>Mes Projets</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <img src="https://placehold.co/300" alt="Projet 1">
-                <h3>Projet 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-            </div>
-            <div class="project-card">
-                <img src="https://placehold.co/300" alt="Projet 2">
-                <h3>Projet 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-            </div>
-            <div class="project-card">
-                <img src="https://placehold.co/300" alt="Projet 3">
-                <h3>Projet 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Vous pouvez me contacter à : <a href="mailto:louis.gernez@orange.fr">louis.gernez@orange.fr</a></p>
-    </section>
-    
-    <button id="scrollToTop">⬆ Retour en haut</button>
-    
-    <script src="script.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-    <script>
-    particlesJS('particles-js', {
-        particles: {
-        number: { value: 75 },
-        size: { value: 3 },
-        move: { speed: 4 },
-        shape: { type: 'circle' },
-        opacity: { value: 1 },
-        },
+<!-- Navigation -->
+<div class="main-nav">
+    <div class="container">
+        <header class="group top-nav">
+            <div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+                <span class="logo">Louis</span>
+            </div>
+            <nav id="navbar-1" class="navbar item-nav">
+                <ul>
+                    <li class="active"><a href="#about">À propos</a></li>
+                    <li><a href="#experiences">Expériences</a></li>
+                    <li><a href="#achievements">Projets</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+</div>
+
+<!-- Introduction -->
+<div class="intro section" id="about">
+    <div class="container">
+        <p>Bonjour, je suis Louis GERNEZ</p>
+        <div class="units-row units-split wrap">
+            <div class="unit-20">
+                <img src="img/ava.jpg" alt="Avatar">
+            </div>
+            <div class="unit-80">
+                <h1>Je vis<br><span id="typed"></span></h1>
+            </div>
+            <p>
+                Étudiant en 3ème année de BUT Informatique, passionné par le développement mobile, les projets embarqués et l’innovation. J’aime créer des applications utiles, ludiques et bien conçues, que ce soit pour Android ou avec du hardware.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Expériences -->
+<div class="work section second" id="experiences">
+    <div class="container">
+        <h1>Expériences<br>Professionnelles</h1>
+        <ul class="work-list">
+            <li>Avril - Juin 2024</li>
+            <li><a href="#">Stage chez Gimel Lavergne</a></li>
+            <li>Développement d'une interface .Net WPF permettant de visualiser rapidement et graphiquement une suite de documents pour un ERP. </li>
+        </ul>
+        <ul class="work-list">
+            <li>Septembre 2024 - Présent</li>
+            <li><a href="#">Atlernant développeur.Net chez Gimel Lavergne</a></li>
+            <li>Développement d'une interface .Net WPF permettant à un utilisateur de créer et planifier des préparation (Développement important pour la transition du logiciel vers une nouvelle version entièrement en .Net)</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Projets -->
+<div class="projects section second" id="achievements">
+    <div class="container">
+        <h1>Projets<br>Perso & Scolaires</h1>
+        <div class="carousel-wrapper">
+            <div class="carousel-track">
+                <div class="project-card">
+                    <img src="img/wisehoot.png" alt="WiseHoot">
+                    <h3>WiseHoot</h3>
+                    <p>Application d’apprentissage gamifiée avec mascotte. Création d’un système de flashcards intelligent avec suivi de progression et Firebase.</p>
+                    <div class="tags">
+                        <div class="tag-row">
+                            <span>Kotlin</span>
+                            <span>Flutter</span>
+                        </div>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="img/lolteammanager.png" alt="LolTeamManager">
+                    <h3>LolTeamManager</h3>
+                    <p>Application mobile de collection de cartes e-sport. Système de packs, collection et backend Firebase.</p>
+                    <div class="tags">
+                        <div class="tag-row">
+                            <span>Firebase</span>
+                            <span>Kotlin</span>
+                        </div>
+                        <span>Flutter</span>
+                    </div>
+                    <a href="https://github.com/GreenHal0/LTM_Flutter" class="github-btn" target="_blank">Voir sur GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="img/jukebox.png" alt="Jukebox NFC">
+                    <h3>Jukebox NFC</h3>
+                    <p>Projet embarqué utilisant ESP32, NFC et Bluetooth pour lancer de la musique via des cartes physiques.</p>
+                    <div class="tags">
+                        <div class="tag-row">
+                            <span>ESP32</span>
+                            <span>NFC</span>
+                        </div>
+                        <span>Bluetooth</span>
+                    </div>
+                    <a href="https://github.com/GreenHal0/RemoteJukebox32" class="github-btn" target="_blank">Voir sur GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="units-row">
+            <div class="unit-50">
+                <p>Portfolio de Louis Gernez</p>
+            </div>
+            <div class="unit-50">
+                <ul class="social list-flat right">
+                    <li><a href="mailto:louis.gernez@orange.fr"><i class="fa fa-send"></i></a></li>
+                    <li><a href="https://github.com/GrnzL"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/louis-gernez-%F0%9F%8E%93-074193297/"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/kube.min.js"></script>
+<script src="js/site.js"></script>
+<script>
+    function newTyped() {}
+    $(function () {
+        // Initialisation du texte animé
+        $("#typed").typed({
+            strings: [" à Annecy", "d'informatique", "ma passion"],
+            typeSpeed: 90,
+            backDelay: 700,
+            contentType: "html",
+            loop: true,
+            resetCallback: function () { newTyped() }
+        });
+
+        $(".reset").click(function () {
+            $("#typed").typed("reset");
+        });
+
+        // Carrousel infini et lent
+        const track = document.querySelector('.carousel-track');
+        const cards = document.querySelectorAll('.project-card');
+        const totalCards = cards.length;
+
+        // Définir le nombre total de cartes dans une variable CSS
+        document.documentElement.style.setProperty('--total-cards', totalCards);
+
+        // Dupliquer les cartes pour créer un effet de boucle infinie
+        const duplicatedCards = Array.from(cards).map(card => card.cloneNode(true));
+        duplicatedCards.forEach(card => track.appendChild(card));
+
+        // Fonction pour mettre en pause l'animation
+        function pauseAnimation() {
+            track.style.animationPlayState = 'paused';
+        }
+
+        // Fonction pour reprendre l'animation
+        function resumeAnimation() {
+            track.style.animationPlayState = 'running';
+        }
+
+        // Ajouter des écouteurs d'événements pour mettre en pause et reprendre l'animation
+        track.addEventListener('mouseenter', pauseAnimation);
+        track.addEventListener('mouseleave', resumeAnimation);
     });
-    </script>
+</script>
+
+
 </body>
 </html>

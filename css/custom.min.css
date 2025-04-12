@@ -1,0 +1,336 @@
+/*
+ *  Draco HTML Template by @flamekaizar
+ *  License: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+ */
+ h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display SC", serif;
+  color: #4a148c; /* Texte violet foncé */
+}
+
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Ajuste à la largeur du parent */
+  height: 600px; /* Augmente la hauteur du carrousel */
+  border-radius: 10px; /* Coins arrondis */
+}
+.carousel-track {
+  display: flex;
+  animation: scroll 20s linear infinite; /* Durée de l'animation */
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-100% * (var(--total-cards) - 1) / var(--total-cards)));
+  }
+}
+
+.project-card {
+  flex-shrink: 0;
+  width: 300px; /* Augmente la largeur des cartes */
+  height: 550px;
+  margin-right: 40px; /* Augmente l'espacement entre les cartes */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #e1bee7; /* Fond violet clair pour les cartes */
+  text-align: center;
+  padding: 20px; /* Augmente le padding interne */
+  border: 2px solid #9a48b1; /* Bordure violet foncé */
+}
+
+.project-card img {
+  width: 200px; /* Largeur fixe */
+  height: 200px; /* Hauteur fixe */
+  object-fit: fill; /* Assure que l'image couvre tout l'espace sans déformation */
+  border-radius: 10px;
+}
+
+
+.project-card h3 {
+  color: #4a148c; /* Texte violet foncé */
+}
+
+.project-card p {
+  color: #7b1fa2; /* Texte violet */
+}
+
+.project-card .tags {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Espace vertical entre les lignes */
+}
+
+.project-card .tags .tag-row {
+  display: flex;
+  gap: 10px; /* Espace horizontal entre les tags */
+}
+
+.project-card .tags span {
+  background-color: #9a48b1; /* Fond violet foncé pour les tags */
+  color: #fff; /* Texte blanc */
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.github-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4a148c; /* Fond violet foncé */
+  color: #fff; /* Texte blanc */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.github-btn:hover {
+  background-color: #7b1fa2; /* Fond violet au survol */
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(154, 72, 177, 0.7); /* Fond violet semi-transparent */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.carousel-btn.next {
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+a, p, li {
+  font-family: "Lato", Arial, sans-serif;
+  color: #7b1fa2; /* Texte violet */
+  font-size: 1em;
+  line-height: 1.75em;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: #4a148c !important; /* Texte violet foncé au survol */
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.container {
+  margin: auto;
+  max-width: 662px;
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .intro img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  footer {
+      text-align: center;
+  }
+}
+
+.typed-cursor {
+  opacity: 1;
+  font-weight: 100;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  -ms-animation: blink 0.7s infinite;
+  -o-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+@-ms-keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+@-o-keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.main-nav {
+  background: #fff; /* Fond violet clair */
+  padding-top: 23px;
+}
+
+.main-nav nav ul li a {
+  color: #7b1fa2; /* Texte violet */
+}
+
+.main-nav nav ul li.active a {
+  color: #4a148c; /* Texte violet foncé */
+}
+
+.section.second {
+  margin-bottom: 90px;
+}
+
+.section .container {
+  position: relative;
+}
+
+.section .container:after {
+  position: absolute;
+  content: url(../img/separator.png);
+  left: 20px;
+}
+
+.section .container h1 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.intro {
+  padding: 95px 0px 70px 0px;
+  overflow-x: hidden;
+}
+
+.intro img {
+  width: 81px;
+  height: 81px;
+  border-radius: 99px;
+}
+
+.intro .wrap {
+  margin: 30px 0px;
+}
+
+.intro h1:before {
+  position: absolute;
+  left: -220px;
+  top: -150px;
+  font-size: 270px;
+  z-index: -1;
+  color: #f3e5f5; /* Texte violet clair */
+}
+
+.intro h1 span {
+  font-size: 47px;
+}
+
+.work .work-list {
+  margin-left: 0px;
+}
+
+.work .work-list li {
+  list-style: none;
+  font-size: 0.9375em;
+  color: #8c8c8c;
+}
+
+.work .work-list li a {
+  padding-bottom: 5px;
+  font-size: 1.1875em;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid #b3b3b3;
+}
+
+.work .work-list li a:hover {
+  border-bottom: 1px solid #4a148c; /* Bordure violet foncé au survol */
+}
+
+.award .award-list {
+  margin-left: 0px;
+}
+
+.award .award-list li:first-child {
+  font-size: 0.9375em;
+  color: #8c8c8c;
+}
+
+.skills .skill-list {
+  margin-left: 0px;
+}
+
+.skills .skill-list li:first-child {
+  font-size: 0.9375em;
+  color: #8c8c8c;
+}
+
+.quote {
+  background: url(../img/bg.jpg);
+  padding: 20px 0px;
+  margin-top: 120px;
+}
+
+.quote h1 {
+  margin: 100px 0px;
+  padding: 40px 20px;
+  border: 5px solid #fff;
+  color: #fff;
+}
+
+footer {
+  padding: 50px 0px 0px 0px;
+  background-color: #fff; /* Fond violet clair */
+}
+
+footer .social li {
+  display: inline;
+  margin-left: 20px;
+}
+
+footer .social li a {
+  font-size: 1.25em;
+  color: #7b1fa2; /* Texte violet */
+}
